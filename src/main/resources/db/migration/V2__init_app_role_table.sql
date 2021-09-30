@@ -1,9 +1,7 @@
 create table app_role (
-    id serial
-        constraint app_role_pk
-            primary key ,
-    name varchar(30) not null
-
+    id int NOT NULL,
+    name varchar(30) not null,
+    CONSTRAINT tbl_role_pkey PRIMARY KEY (id)
 );
 
 create unique index app_role_name_uindex
