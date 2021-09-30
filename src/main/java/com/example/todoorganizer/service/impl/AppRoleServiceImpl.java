@@ -17,17 +17,17 @@ public class AppRoleServiceImpl implements AppRoleService {
 
     @Override
     public Collection<AppRole> findAll() {
-        return null;
+        return appRoleRepository.findAll();
     }
 
     @Override
     public Optional<AppRole> findById(Long id) {
-        return Optional.empty();
+        return appRoleRepository.findById(id);
     }
 
     @Override
     public AppRole findByName(String name) {
-        return null;
+        return appRoleRepository.findByName(name);
     }
 
     @Override

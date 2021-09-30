@@ -22,11 +22,5 @@ public class ToDoOrganizerApplication {// implements CommandLineRunner {
         SpringApplication.run(ToDoOrganizerApplication.class, args);
     }
 
-//    @Override
-//    public void run(String... args) throws Exception {
-//        if (appRoleService.findAll().isEmpty()) {
-//            appRoleService.saveOrUpdate(new AppRole(ConstantUtils.ADMIN.toString()));
-//            appRoleService.saveOrUpdate(new AppRole(ConstantUtils.USER.toString()));
-//        }
-//    }
+
 }
