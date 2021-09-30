@@ -7,10 +7,12 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Data
 @Table(name = "app_role")
+public class AppRole {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-public class AppRole extends BaseEntity{
     @Column(nullable = false)
     private String name;
 
@@ -19,7 +21,9 @@ public class AppRole extends BaseEntity{
 
     public AppRole() {}
 
-    public AppRole(String name) {this.name = name;}
+    public AppRole(String name) {
+        this.name = name;
+    }
 
     public String getName() {return name;}
 

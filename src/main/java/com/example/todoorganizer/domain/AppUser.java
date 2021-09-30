@@ -1,16 +1,18 @@
 package com.example.todoorganizer.domain;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "app_user")
-@Data
 @ToString(exclude = "password")
-public class AppUser extends BaseEntity{
+public class AppUser{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     @Column
     private String name;
     @Column

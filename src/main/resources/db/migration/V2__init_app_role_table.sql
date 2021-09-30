@@ -1,5 +1,5 @@
 create table app_role (
-    id int NOT NULL,
+    id BIGSERIAL not NULL,
     name varchar(30) not null,
     CONSTRAINT tbl_role_pkey PRIMARY KEY (id)
 );
