@@ -12,15 +12,15 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
 @SpringBootApplication
-public class ToDoOrganizerApplication {// implements CommandLineRunner {
-//    private final Logger logger = LoggerFactory.getLogger(ToDoOrganizerApplication.class);
-//    @Autowired
-//    private AppRoleService appRoleService;
+public class ToDoOrganizerApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ToDoOrganizerApplication.class, args);
     }
-
-
 }
